@@ -28,7 +28,7 @@ footer { margin-top: 3rem; font-size: .9rem; color: #6b7a72; }
 <body>
 
 <h1>Varzishh Privacy Policy</h1>
-<p class="updated">Last updated: 5 September 2026 · Operated by Midnight Developers</p>
+<p class="updated">Last updated: 10 September 2026 · Operated by Midnight Developers</p>
 
 <p>Varzishh is a home-workout app. This policy explains exactly what the app
 collects, why, and how you can get it back or delete it. It covers the Android
@@ -69,14 +69,43 @@ exercise any right described here, contact us at
     <td>To send workout reminders you asked for. Revoking the Android
     notification permission stops this.</td>
   </tr>
+  <tr>
+    <td><strong>Advertising identifier</strong> — your Android advertising ID,
+    read only if you agree to the consent prompt and only while the app is
+    showing ads</td>
+    <td>To request an ad when you choose to watch one to unlock a feature. This
+    identifier is shared with Google&nbsp;AdMob; nothing else in this table is.</td>
+  </tr>
+  <tr>
+    <td><strong>Usage events</strong> — an app instance identifier and five
+    events: <code>paywall_shown</code>, <code>paywall_choice</code>,
+    <code>ad_outcome</code>, <code>welcome_week_ended</code> and
+    <code>first_workout_completed</code></td>
+    <td>To understand which features people reach and whether they work. These
+    events record that something happened and never carry your name, email,
+    or anything about your body or a workout.</td>
+  </tr>
 </table>
 
 <h2>What we do not collect</h2>
-<p>Varzishh contains no advertising, no analytics or tracking SDKs, and no
-third-party marketing tools. We do not collect your location, contacts, photos,
-files, or device identifiers for advertising. We do not build advertising
-profiles, and we never sell or rent your data. The app requests only two Android
-permissions: internet access, and — with your consent — notifications.</p>
+<p>We do not collect your location, contacts, photos, files, calendar, or
+browsing history, and we do not use crash-reporting or marketing tools. We
+never sell or rent your data. Nothing about your body, your workouts or your
+plan is sent to an advertiser or an analytics service — those are held only by
+us, to run the app for you.</p>
+
+<h2>Advertising and analytics</h2>
+<p>Some features can be unlocked either by subscribing or by watching a short
+ad. Ads are served by Google&nbsp;AdMob and appear only at that moment, when
+you choose to watch one — never in the middle of a workout, and never as
+banners around the app.</p>
+<p>Before any ad is requested we ask for your consent through Google's consent
+prompt, which also covers the usage events above. If you decline, no ad is
+requested and no advertising identifier is read; the feature simply stays
+locked until you subscribe, and the rest of the app is unaffected. You can
+change that answer at any time from Settings.</p>
+<p>Alongside internet access and — with your consent — notifications, the app
+declares Google's advertising ID permission, which the ads library requires.</p>
 
 <h2>Who your data is shared with</h2>
 <p>We share data only with the infrastructure providers required to run the
@@ -85,6 +114,8 @@ service, never for their own purposes:</p>
   <tr><th>Provider</th><th>Role</th></tr>
   <tr><td>Google (Firebase Authentication)</td><td>Verifies your Google sign-in.</td></tr>
   <tr><td>Google (Firebase Cloud Messaging)</td><td>Delivers notifications you opted into.</td></tr>
+  <tr><td>Google (AdMob)</td><td>Serves the ads you choose to watch. Receives your advertising identifier, with your consent.</td></tr>
+  <tr><td>Google (Analytics for Firebase)</td><td>Records the five usage events above, with your consent.</td></tr>
   <tr><td>Render</td><td>Hosts the Varzishh backend service.</td></tr>
   <tr><td>Neon</td><td>Hosts the database, located in Singapore.</td></tr>
 </table>
